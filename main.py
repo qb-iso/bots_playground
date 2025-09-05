@@ -19,6 +19,10 @@ GREEN = (0, 200, 0)
 DARK_GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 
+# --- Manhattan Dist ---
+def manhattan(a, b):
+    return abs(a[0] - b[0]) + abs(a[1] - b[1])
+
 # --- Init ---
 pygame.init()
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
